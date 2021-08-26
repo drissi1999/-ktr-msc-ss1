@@ -9,7 +9,11 @@ package epitec;
  *
  * @author Drissi EL houcine
  */
-public abstract class Character {
+interface  unsheathe{
+  public void unsheathe();
+  
+}
+public abstract class Character  implements unsheathe{
     
     protected String name;
     protected int life ;
@@ -57,5 +61,8 @@ public abstract class Character {
     
           return "["+this.name+"] RRRRRRRRRRRRRRRRRRRRRRRRRRRRR";
       }
- 
+     public void unsheathe(){
+     
+     System.out.println("["+this.name+"] : unsheathes his weapon .");
+     }
 }
